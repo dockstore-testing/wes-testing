@@ -1,0 +1,7 @@
+version: 1.2
+workflows:
+   -  name: single-descriptor-with-input
+      subclass: WDL
+      primaryDescriptorPath: workflows/wdl/w1/singleDescriptorWithInput.wdl
+      testParameterFiles:
+        - workflows/wdl/w1/test.json
