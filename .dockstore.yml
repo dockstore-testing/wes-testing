@@ -12,3 +12,8 @@ workflows:
       publish: true
       subclass: WDL
       primaryDescriptorPath: /workflows/wdl/w2/multiDescriptorNoInput.wdl
+      
+   -  name: single-descriptor-no-input
+      publish: true
+      subclass: WDL
+      primaryDescriptorPath: /workflows/wdl/w3/singleDescriptorNoInput.wdl
