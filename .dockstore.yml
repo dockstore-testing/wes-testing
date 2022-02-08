@@ -2,11 +2,13 @@ version: 1.2
 workflows:
 
    -  name: single-descriptor-with-input
+      publish: true
       subclass: WDL
-      primaryDescriptorPath: workflows/wdl/w1/singleDescriptorWithInput.wdl
+      primaryDescriptorPath: /workflows/wdl/w1/singleDescriptorWithInput.wdl
       testParameterFiles:
         - /workflows/wdl/w1/test.json
         
    -  name: multi-descriptor-no-input
+      publish: true
       subclass: WDL
-      primaryDescriptorPath: workflows/wdl/w2/multiDescriptorNoInput.wdl
+      primaryDescriptorPath: /workflows/wdl/w2/multiDescriptorNoInput.wdl
