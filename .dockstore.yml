@@ -7,13 +7,19 @@ workflows:
       primaryDescriptorPath: /workflows/wdl/w1/singleDescriptorWithInput.wdl
       testParameterFiles:
         - /workflows/wdl/w1/test.json
+      filters:
+         branches: ["main"]
         
    -  name: multi-descriptor-no-input
       publish: true
       subclass: WDL
       primaryDescriptorPath: /workflows/wdl/w2/multiDescriptorNoInput.wdl
+      filters:
+         branches: ["main"]
       
    -  name: single-descriptor-no-input
       publish: true
       subclass: WDL
       primaryDescriptorPath: /workflows/wdl/w3/singleDescriptorNoInput.wdl
+      filters:
+         branches: ["main"]
