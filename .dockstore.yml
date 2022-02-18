@@ -23,3 +23,12 @@ workflows:
       primaryDescriptorPath: /workflows/wdl/w3/singleDescriptorNoInput.wdl
       filters:
          branches: ["main"]
+         
+   -  name: single-descriptor-nested-input
+      publish: true
+      subclass: WDL
+      primaryDescriptorPath: /workflows/wdl/w4/singleDescriptorNestedInput.wdl
+      testParameterFiles:
+        - /workflows/wdl/w4/inputJson.json
+      filters:
+         branches: ["main"]
