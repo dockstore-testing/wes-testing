@@ -32,3 +32,12 @@ workflows:
         - /workflows/wdl/w4/inputJson.json
       filters:
          branches: ["main"]
+         
+   -  name: single-descriptor-complex-nested-input
+      publish: true
+      subclass: WDL
+      primaryDescriptorPath: /workflows/wdl/w5/singleDescriptorComplexNestedInput.wdl
+      testParameterFiles:
+        - /workflows/wdl/w5/inputJson.json
+      filters:
+         branches: ["main"]
