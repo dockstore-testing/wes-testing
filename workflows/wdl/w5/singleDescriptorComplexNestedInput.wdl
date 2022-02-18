@@ -10,7 +10,8 @@ task hello {
     File textFile2
   }
   command {
-    cat textFile1 > output_file.txt && cat textFile2 >> output_file.txt
+    cat textFile1 >> output_file.txt
+    cat textFile2 >> output_file.txt
   }
   output { File totalReadsFile  = "output_file.txt" }
 }
