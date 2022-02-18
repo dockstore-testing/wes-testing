@@ -10,3 +10,4 @@ To keep test maintenance concise, try to use verbose naming and avoid small chan
 - `./workflows/wdl/w1` contains a basic single-descriptor workflow that takes a single input json with a String parameter
 - `./workflows/wdl/w2` contains a basic multi-descriptor workflow that takes no input parameters
 - `./workflows/wdl/w3` contains a basic single-descriptor workflow that takes no input parameters
+- `./workflows/wdl/w4` contains a basic single-descriptor workflow that takes an input json which points to an input file
