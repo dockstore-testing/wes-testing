@@ -13,8 +13,8 @@ task hello {
     File textFile2
   }
   command {
-    echo ~{read_string(textFile1)} >> output_file.txt
-    echo ~{read_string(textFile2)} >> output_file.txt
+    bash echo '~{read_string(textFile1)}' >> output_file.txt
+    bash echo '~{read_string(textFile2)}' >> output_file.txt
   }
   output { File totalReadsFile  = "output_file.txt" }
 }
