@@ -10,7 +10,7 @@ task hello {
     File textFile
   }
   command {
-    cat textFile > output_file.txt
+    echo "${read_string(textFile)}" > output_file.txt
   }
   output { File totalReadsFile  = "output_file.txt" }
 }
