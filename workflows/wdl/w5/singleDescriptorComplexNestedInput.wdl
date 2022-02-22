@@ -13,8 +13,9 @@ task hello {
     File textFile2
   }
   command {
-    bash echo '~{read_string(textFile1)}' >> output_file.txt
-    bash echo '~{read_string(textFile2)}' >> output_file.txt
+    echo "File1: ${textFile1}, File2: ${textFile2}" >> output_file.txt
+    echo "${read_string(textFile1)}" >> output_file.txt
+    echo "${read_string(textFile2)}" >> output_file.txt
   }
   output { File totalReadsFile  = "output_file.txt" }
 }
