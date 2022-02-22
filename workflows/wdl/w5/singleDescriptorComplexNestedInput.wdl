@@ -10,8 +10,8 @@ task hello {
     File textFile2
   }
   command {
-    echo "$(cat file1.txt)" >> output_file.txt
-    echo "$(cat file1.txt)" >> output_file.txt
+    cat textFile1.txt >> output_file.txt
+    cat textFile2.txt >> output_file.txt
   }
   output { File totalReadsFile  = "output_file.txt" }
 }
