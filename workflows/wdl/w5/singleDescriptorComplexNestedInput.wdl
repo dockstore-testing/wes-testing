@@ -5,6 +5,9 @@ workflow test {
 }
 
 task hello {
+  runtime {
+    docker: "ubuntu:latest"
+  }
   input {
     File textFile1
     File textFile2
