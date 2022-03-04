@@ -1,0 +1,7 @@
+name: hello-world-wdl
+schemaVersion: 1
+contexts:
+    ctx1:
+        engines:
+            - type: wdl
+              engine: cromwell
