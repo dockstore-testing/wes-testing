@@ -1,0 +1,10 @@
+name: dockstore-agc-tutorial-project
+data:
+  - location: s3://human-pangenomics
+    readOnly: true
+schemaVersion: 1
+contexts:
+  ctx1:
+    engines:
+      - type: wdl
+        engine: cromwell
