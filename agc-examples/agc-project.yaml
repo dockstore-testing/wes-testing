@@ -1,4 +1,4 @@
-name: dockstore-agc-tutorial-project
+name: dockstoreAgcTutorialProject
 data:
   - location: s3://human-pangenomics
     readOnly: true
