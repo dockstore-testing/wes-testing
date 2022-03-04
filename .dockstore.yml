@@ -48,3 +48,13 @@ workflows:
       primaryDescriptorPath: /agc-examples/hello-world/Dockstore.wdl
       filters:
          branches: ["main"]
+         
+         
+   -  name: agc-fastq-read-counts
+      publish: true
+      subclass: WDL
+      primaryDescriptorPath: /agc-examples/fastq/Dockstore.wdl
+      testParameterFiles:
+        - /agc-examples/fastq/input.json
+      filters:
+         branches: ["main"]
