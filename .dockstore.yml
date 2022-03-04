@@ -49,7 +49,6 @@ workflows:
       filters:
          branches: ["main"]
          
-         
    -  name: agc-fastq-read-counts
       publish: true
       subclass: WDL
