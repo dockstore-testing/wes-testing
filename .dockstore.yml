@@ -41,3 +41,10 @@ workflows:
         - /workflows/wdl/w5/inputJson.json
       filters:
          branches: ["main"]
+         
+   -  name: agc-hello-world
+      publish: true
+      subclass: WDL
+      primaryDescriptorPath: /agc-examples/hello-world/Dockstore.wdl
+      filters:
+         branches: ["main"]
