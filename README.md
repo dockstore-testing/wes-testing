@@ -15,3 +15,5 @@ To keep test maintenance concise, try to use verbose naming and avoid small chan
 
 ### AGC Workflows
 - `./agc-examples/hello-world` contains a basic single-descriptor workflow with no inputs
+- `./agc-examples/hello-world-inputs` contains a basic single-descriptor workflow with a String input
+- `./agc-examples/fastq` contains a complex single-descriptor workflow with an S3 bucket input
