@@ -49,6 +49,15 @@ workflows:
       filters:
          branches: ["main"]
          
+   -  name: agc-hello-world-input
+      publish: true
+      subclass: WDL
+      primaryDescriptorPath: /agc-examples/hello-world-inputs/Dockstore.wdl
+      testParameterFiles:
+        - /agc-examples/hello-world-inputs/input.json
+      filters:
+         branches: ["main"]
+         
    -  name: agc-fastq-read-counts
       publish: true
       subclass: WDL
