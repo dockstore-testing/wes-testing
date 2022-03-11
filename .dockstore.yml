@@ -48,6 +48,7 @@ workflows:
       primaryDescriptorPath: /agc-examples/hello-world/Dockstore.wdl
       filters:
          branches: ["main"]
+         tags: ["1.12"]
          
    -  name: agc-hello-world-input
       publish: true
@@ -57,6 +58,7 @@ workflows:
         - /agc-examples/hello-world-inputs/input.json
       filters:
          branches: ["main"]
+         tags: ["1.12"]
          
    -  name: agc-fastq-read-counts
       publish: true
@@ -66,3 +68,4 @@ workflows:
         - /agc-examples/fastq/input.json
       filters:
          branches: ["main"]
+         tags: ["1.12"]
