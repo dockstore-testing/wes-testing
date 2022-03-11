@@ -66,7 +66,7 @@ workflows:
       filters:
           branches:
             - main
-         tags:
+          tags:
             - 1.12
          
    -  name: agc-fastq-read-counts
@@ -78,5 +78,5 @@ workflows:
       filters:
           branches:
             - main
-         tags:
+          tags:
             - 1.12
